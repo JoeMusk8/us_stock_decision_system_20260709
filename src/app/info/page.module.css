@@ -1,0 +1,286 @@
+.inputPanel {
+  left: 40px;
+  top: 164px;
+  width: 1360px;
+  height: 128px;
+}
+
+.inputPanel label {
+  position: absolute;
+  left: 28px;
+  top: 34px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.accountInput {
+  position: absolute;
+  left: 28px;
+  top: 56px;
+  width: 620px;
+  font-size: 14px;
+}
+
+.addButton,
+.clearButton {
+  position: absolute;
+  top: 56px;
+  width: 120px;
+}
+
+.addButton {
+  left: 674px;
+}
+
+.clearButton {
+  left: 810px;
+}
+
+.addButton button,
+.clearButton button {
+  width: 120px;
+}
+
+.countPill {
+  position: absolute;
+  left: 980px;
+  top: 65px;
+  width: 92px;
+}
+
+.accountsPanel {
+  left: 40px;
+  top: 324px;
+  width: 300px;
+  height: 620px;
+}
+
+.accountsPanel h2,
+.postsPanel h2,
+.analysisPanel h2 {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  margin: 0;
+  color: var(--text);
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 700;
+}
+
+.accountsPanel p,
+.analysisPanel > p {
+  position: absolute;
+  left: 24px;
+  top: 58px;
+  width: 220px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.accountList {
+  position: absolute;
+  left: 24px;
+  top: 100px;
+  display: grid;
+  gap: 14px;
+}
+
+.accountRow {
+  position: relative;
+  width: 252px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.activeRow {
+  background: var(--blue-bg);
+}
+
+.xPill {
+  position: absolute;
+  left: 12px;
+  top: 6px;
+  width: 34px;
+}
+
+.accountRow strong {
+  position: absolute;
+  left: 56px;
+  top: 11px;
+  width: 130px;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.statusPill {
+  position: absolute;
+  left: 190px;
+  top: 6px;
+  width: 48px;
+}
+
+.remaining {
+  position: absolute;
+  left: 24px;
+  top: 548px;
+  width: 130px;
+}
+
+.postsPanel {
+  left: 364px;
+  top: 324px;
+  width: 650px;
+  height: 620px;
+}
+
+.currentAccount {
+  position: absolute;
+  left: 420px;
+  top: 24px;
+  width: 190px;
+}
+
+.postList {
+  position: absolute;
+  left: 24px;
+  top: 108px;
+  display: grid;
+  gap: 24px;
+}
+
+.postCard {
+  position: relative;
+  width: 602px;
+  height: 118px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.postCard strong {
+  position: absolute;
+  left: 18px;
+  top: 16px;
+  font-size: 14px;
+}
+
+.postCard span {
+  position: absolute;
+  left: 164px;
+  top: 16px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.postCard p {
+  position: absolute;
+  left: 18px;
+  top: 46px;
+  width: 390px;
+  margin: 0;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.analysisState {
+  position: absolute;
+  left: 18px;
+  top: 82px;
+  width: 72px;
+}
+
+.postCard button {
+  position: absolute;
+  left: 478px;
+  top: 66px;
+  width: 96px;
+  height: 38px;
+  border: 0;
+  border-radius: 11px;
+  background: var(--black);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.analysisPanel {
+  left: 1038px;
+  top: 324px;
+  width: 362px;
+  height: 620px;
+}
+
+.analysisPanel > p {
+  width: 290px;
+}
+
+.waiting {
+  position: absolute;
+  left: 218px;
+  top: 24px;
+  width: 110px;
+}
+
+.selectedBox,
+.resultBox {
+  position: absolute;
+  left: 24px;
+  width: 314px;
+  border-radius: 14px;
+}
+
+.selectedBox {
+  top: 104px;
+  height: 104px;
+  background: var(--soft);
+  padding: 16px 18px;
+}
+
+.selectedBox strong,
+.resultBox strong {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.selectedBox span,
+.resultBox span {
+  display: block;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.resultBox {
+  top: 232px;
+  height: 268px;
+  border: 1px solid var(--line);
+  background: #ffffff;
+  padding: 18px;
+}
+
+.resultBox span {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.verifyBox {
+  position: absolute;
+  left: 24px;
+  top: 524px;
+  width: 314px;
+  height: 72px;
+  border-radius: 14px;
+  background: var(--amber-bg);
+  color: var(--amber);
+  padding: 18px;
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 500;
+}

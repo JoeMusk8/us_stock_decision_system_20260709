@@ -1,0 +1,180 @@
+.metricGrid {
+  position: absolute;
+  left: 40px;
+  top: 164px;
+  display: grid;
+  grid-template-columns: repeat(4, 248px) 296px;
+  gap: 18px;
+}
+
+.topMetric {
+  position: relative;
+  width: 248px;
+  height: 92px;
+  padding: 12px 16px;
+}
+
+.wideMetric {
+  width: 296px;
+}
+
+.topMetric span {
+  display: block;
+  width: 216px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+.topMetric strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.topMetric em {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+}
+
+.topMetric i {
+  position: absolute;
+  right: 17px;
+  top: 15px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.greenDot {
+  background: var(--green);
+}
+
+.amberDot {
+  background: var(--amber);
+}
+
+.blueDot {
+  background: var(--blue);
+}
+
+.purpleDot {
+  background: var(--purple);
+}
+
+.nasdaqChart,
+.btcChart {
+  top: 292px;
+  height: 430px;
+  padding: 20px 22px;
+}
+
+.nasdaqChart {
+  left: 40px;
+  width: 660px;
+}
+
+.btcChart {
+  left: 724px;
+  width: 676px;
+}
+
+.aiPanel {
+  left: 40px;
+  top: 752px;
+  width: 660px;
+  height: 222px;
+}
+
+.reminderPanel {
+  left: 724px;
+  top: 752px;
+  width: 676px;
+  height: 222px;
+}
+
+.aiPanel h2,
+.reminderPanel h2 {
+  position: absolute;
+  left: 24px;
+  top: 22px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.aiPanel p,
+.reminderPanel p {
+  position: absolute;
+  left: 24px;
+  top: 56px;
+  width: 590px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.reminderPanel p {
+  width: 460px;
+}
+
+.pills {
+  position: absolute;
+  left: 24px;
+  top: 94px;
+  display: flex;
+  gap: 12px;
+}
+
+.pills span {
+  min-height: 26px;
+  font-size: 11px;
+}
+
+.aiText {
+  position: absolute;
+  left: 24px;
+  top: 132px;
+  width: 612px;
+  height: 66px;
+  border-radius: 14px;
+  background: var(--soft);
+  color: var(--muted);
+  padding: 14px 16px;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.reminderCount {
+  position: absolute;
+  left: 536px;
+  top: 22px;
+  width: 112px;
+  min-height: 26px;
+  font-size: 11px;
+}
+
+.reminders {
+  position: absolute;
+  left: 24px;
+  top: 94px;
+  display: grid;
+  grid-template-columns: repeat(5, 112px);
+  gap: 10px 14px;
+}
+
+.reminders input {
+  width: 112px;
+  height: 32px;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 10px;
+  line-height: 11px;
+}

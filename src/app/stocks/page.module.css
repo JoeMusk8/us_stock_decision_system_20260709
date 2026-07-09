@@ -1,0 +1,424 @@
+.inputPanel {
+  left: 40px;
+  top: 164px;
+  width: 1360px;
+  height: 112px;
+}
+
+.stockInput {
+  position: absolute;
+  left: 28px;
+  top: 50px;
+  width: 410px;
+  font-size: 10px;
+}
+
+.addButton,
+.clearButton {
+  position: absolute;
+  top: 50px;
+  width: 106px;
+}
+
+.addButton {
+  left: 466px;
+}
+
+.clearButton {
+  left: 588px;
+}
+
+.addButton button,
+.clearButton button {
+  width: 106px;
+  font-size: 11px;
+}
+
+.tags {
+  position: absolute;
+  left: 742px;
+  top: 58px;
+  display: flex;
+  gap: 8px;
+}
+
+.tags span {
+  width: 50px;
+  min-height: 24px;
+  padding: 0;
+  font-size: 9px;
+}
+
+.stockListPanel {
+  left: 40px;
+  top: 304px;
+  width: 360px;
+  height: 640px;
+}
+
+.chartPanel {
+  left: 424px;
+  top: 304px;
+  width: 596px;
+  height: 640px;
+}
+
+.aiPanel {
+  left: 1044px;
+  top: 304px;
+  width: 356px;
+  height: 640px;
+}
+
+.stockListPanel h2,
+.chartPanel h2,
+.aiPanel h2 {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 23px;
+}
+
+.stockListPanel p,
+.chartPanel > p,
+.aiPanel > p {
+  position: absolute;
+  left: 24px;
+  top: 58px;
+  width: 260px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 15px;
+}
+
+.chartPanel > p {
+  width: 520px;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.aiPanel > p {
+  width: 292px;
+  font-size: 10.5px;
+}
+
+.countPill,
+.currentPill {
+  position: absolute;
+  top: 24px;
+}
+
+.countPill {
+  left: 237px;
+  width: 92px;
+}
+
+.currentPill {
+  left: 235px;
+  width: 86px;
+  min-height: 26px;
+  font-size: 10px;
+}
+
+.stockRows {
+  position: absolute;
+  left: 24px;
+  top: 104px;
+  display: grid;
+  gap: 16px;
+}
+
+.stockRow {
+  position: relative;
+  width: 312px;
+  height: 66px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.activeRow {
+  background: var(--blue-bg);
+}
+
+.stockRow strong {
+  position: absolute;
+  left: 16px;
+  top: 12px;
+  font-size: 15px;
+}
+
+.stockRow span {
+  position: absolute;
+  left: 86px;
+  top: 12px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.stockRow em {
+  position: absolute;
+  left: 86px;
+  top: 36px;
+  width: 90px;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.up {
+  color: var(--green);
+}
+
+.down {
+  color: var(--red);
+}
+
+.stockRow button {
+  position: absolute;
+  left: 199px;
+  top: 14px;
+  width: 88px;
+  height: 36px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--black);
+  color: #ffffff;
+  font-size: 11px;
+}
+
+.remaining {
+  position: absolute;
+  left: 24px;
+  top: 603px;
+  width: 130px;
+}
+
+.metrics {
+  position: absolute;
+  left: 24px;
+  top: 94px;
+  display: flex;
+  gap: 16px;
+}
+
+.metric {
+  position: relative;
+  width: 140px;
+  height: 92px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 13px 16px;
+}
+
+.metric:first-child {
+  width: 170px;
+}
+
+.metric span {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.metric strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.metric em {
+  display: block;
+  margin-top: 6px;
+  font-size: 10px;
+  line-height: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.metric i {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.green {
+  color: var(--green);
+}
+
+.greenDot {
+  background: var(--green);
+}
+
+.amber {
+  color: var(--amber);
+}
+
+.amberDot {
+  background: var(--amber);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.blueDot {
+  background: var(--blue);
+}
+
+.purple {
+  background: var(--purple);
+}
+
+.embeddedChart {
+  position: absolute;
+  left: 24px;
+  top: 212px;
+  width: 548px;
+  height: 360px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.rangePanel {
+  position: absolute;
+  left: 24px;
+  top: 102px;
+  width: 308px;
+  height: 122px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 13px 15px;
+}
+
+.rangePanel h3 {
+  margin: 0;
+  font-size: 10.5px;
+  line-height: 15px;
+}
+
+.rangePanel > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.rangePanel article {
+  height: 82px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  padding: 9px 11px;
+}
+
+.rangePanel span,
+.rangePanel em {
+  display: block;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 15px;
+  font-style: normal;
+}
+
+.rangePanel strong {
+  display: block;
+  margin: 6px 0;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.tabs {
+  position: absolute;
+  left: 24px;
+  top: 237px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 308px;
+  height: 34px;
+  border-radius: 14px;
+  background: var(--soft);
+  padding: 4px 12px;
+}
+
+.tabs span {
+  width: 60px;
+  min-height: 26px;
+  padding: 0;
+  font-size: 10px;
+}
+
+.researchGrid {
+  position: absolute;
+  left: 24px;
+  top: 285px;
+  display: grid;
+  grid-template-columns: repeat(2, 148px);
+  gap: 16px 12px;
+}
+
+.researchCard {
+  position: relative;
+  height: 100px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 11px 13px 11px 17px;
+}
+
+.researchCard:nth-child(n + 3) {
+  height: 110px;
+}
+
+.researchCard i {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: 4px;
+  height: calc(100% + 2px);
+  border-radius: 4px;
+}
+
+.researchCard strong {
+  display: block;
+  font-size: 10.5px;
+  line-height: 15px;
+}
+
+.researchCard p {
+  margin: 11px 0 0;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 15px;
+}
+
+.conclusion {
+  position: absolute;
+  left: 24px;
+  top: 527px;
+  width: 308px;
+  height: 78px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 13px 15px;
+}
+
+.conclusion strong {
+  font-size: 10.5px;
+  line-height: 15px;
+}
+
+.conclusion p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 15px;
+}

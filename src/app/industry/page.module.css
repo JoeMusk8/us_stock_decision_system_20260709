@@ -1,0 +1,200 @@
+.inputPanel {
+  left: 40px;
+  top: 164px;
+  width: 1360px;
+  height: 116px;
+}
+
+.inputPanel label {
+  position: absolute;
+  left: 24px;
+  top: 38px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.industryInput {
+  position: absolute;
+  left: 24px;
+  top: 60px;
+  width: 720px;
+  font-size: 14px;
+}
+
+.startButton,
+.clearButton {
+  position: absolute;
+  top: 60px;
+}
+
+.startButton {
+  left: 770px;
+}
+
+.clearButton {
+  left: 904px;
+}
+
+.startButton button {
+  width: 120px;
+  height: 40px;
+}
+
+.clearButton button {
+  width: 88px;
+  height: 40px;
+}
+
+.mapPanel {
+  left: 40px;
+  top: 308px;
+  width: 850px;
+  height: 506px;
+}
+
+.radarPanel {
+  left: 920px;
+  top: 308px;
+  width: 480px;
+  height: 506px;
+}
+
+.mapPanel h2,
+.radarPanel h2 {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  margin: 0;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.mapPanel > p,
+.radarPanel > p {
+  position: absolute;
+  left: 24px;
+  top: 58px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.mapPanel > p {
+  width: 600px;
+}
+
+.radarPanel > p {
+  width: 380px;
+}
+
+.chainColumns {
+  position: absolute;
+  left: 24px;
+  top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  gap: 22px;
+}
+
+.chainColumn {
+  height: 346px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 18px;
+}
+
+.midColumn {
+  background: var(--blue-bg);
+}
+
+.chainColumn h3 {
+  margin: 0 0 18px;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.chainNode {
+  display: flex;
+  align-items: center;
+  height: 38px;
+  margin-top: 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 0 14px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.companyList {
+  position: absolute;
+  left: 24px;
+  top: 98px;
+  display: grid;
+  gap: 14px;
+}
+
+.companyRow {
+  position: relative;
+  width: 432px;
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.companyRow strong {
+  position: absolute;
+  left: 16px;
+  top: 12px;
+  width: 60px;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.companyRow span {
+  position: absolute;
+  left: 86px;
+  top: 12px;
+  width: 190px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.relation {
+  position: absolute;
+  left: 314px;
+  top: 8px;
+  width: 90px;
+}
+
+.summaryPanel {
+  left: 40px;
+  top: 842px;
+  width: 1360px;
+  height: 106px;
+}
+
+.summaryPanel h2 {
+  position: absolute;
+  left: 24px;
+  top: 22px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.summaryPanel p {
+  position: absolute;
+  left: 24px;
+  top: 58px;
+  width: 1240px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 20px;
+}
