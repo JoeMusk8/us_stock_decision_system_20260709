@@ -1,0 +1,70 @@
+.portal {
+  min-height: 100vh;
+  background: #f7f7f8;
+}
+
+.switcher {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  height: 92px;
+  padding: 18px 40px;
+  border-bottom: 1px solid #e5e7eb;
+  background: rgba(247, 247, 248, 0.96);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.04);
+}
+
+.switcher p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 500;
+}
+
+.switcher h1 {
+  margin: 4px 0 0;
+  color: #111827;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.switcher nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.switcher button {
+  min-width: 150px;
+  height: 42px;
+  border: 1px solid #e5e7eb;
+  border-radius: 11px;
+  background: #ffffff;
+  color: #111827;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.switcher button.active {
+  border-color: #202123;
+  background: #202123;
+  color: #ffffff;
+}
+
+.moduleFrame {
+  display: block;
+  width: 100%;
+  min-height: calc(100vh - 92px);
+  height: 1120px;
+  border: 0;
+  background: #f7f7f8;
+}
