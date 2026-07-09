@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import type { ButtonHTMLAttributes, InputHTMLAttributes } from "react";
 import styles from "./Ui.module.css";
 
 export function PageShell({ title, children, compactTitle = false }: { title: string; children: ReactNode; compactTitle?: boolean }) {
@@ -16,14 +17,27 @@ export function Card({ className = "", children }: { className?: string; childre
   return <section className={`${styles.card} ${className}`}>{children}</section>;
 }
 
-export function Button({ children, variant = "primary" }: { children: ReactNode; variant?: "primary" | "secondary" }) {
-  return <button className={variant === "primary" ? styles.primaryButton : styles.secondaryButton}>{children}</button>;
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+  children: ReactNode;
+  variant?: "primary" | "secondary";
+};
+
+export function Button({ children, variant = "primary", className = "", ...props }: ButtonProps) {
+  return (
+    <button className={`${variant === "primary" ? styles.primaryButton : styles.secondaryButton} ${className}`} {...props}>
+      {children}
+    </button>
+  );
 }
 
 export function Pill({ children, tone = "gray", className = "" }: { children: ReactNode; tone?: "gray" | "green" | "blue" | "amber" | "purple"; className?: string }) {
   return <span className={`${styles.pill} ${styles[tone]} ${className}`}>{children}</span>;
 }
 
-export function TextInput({ placeholder, className = "" }: { placeholder: string; className?: string }) {
-  return <input className={`${styles.input} ${className}`} placeholder={placeholder} />;
+type TextInputProps = InputHTMLAttributes<HTMLInputElement> & {
+  className?: string;
+};
+
+export function TextInput({ placeholder, className = "", ...props }: TextInputProps) {
+  return <input className={`${styles.input} ${className}`} placeholder={placeholder} {...props} />;
 }

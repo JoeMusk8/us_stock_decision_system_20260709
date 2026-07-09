@@ -197,6 +197,21 @@
   width: 130px;
 }
 
+.stockEmpty {
+  position: absolute;
+  left: 24px;
+  top: 104px;
+  width: 312px;
+  height: 120px;
+  border: 1px dashed var(--line);
+  border-radius: 14px;
+  background: var(--soft);
+  color: var(--muted);
+  padding: 34px 20px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
 .metrics {
   position: absolute;
   left: 24px;

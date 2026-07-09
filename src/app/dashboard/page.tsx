@@ -34,7 +34,7 @@ export default async function DashboardPage() {
         <h2>每日AI综合分析输出窗口</h2>
         <p>每日由 AI 根据纳斯达克、资金流向、RSI、均线结构、成交量、比特币和事件日历输出。</p>
         <div className={styles.pills}>
-          <Pill tone="amber">市场状态：谨慎</Pill>
+          <Pill tone="amber">市场状态：待接入</Pill>
           <Pill tone="amber">情绪：待接入</Pill>
           <Pill tone="gray">风险偏好：待确认</Pill>
         </div>

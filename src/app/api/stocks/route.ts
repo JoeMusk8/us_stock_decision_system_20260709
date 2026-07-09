@@ -3,7 +3,7 @@ import { getEquitySeries, getQuote } from "@/lib/market-data";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
-  const symbols = (searchParams.get("symbols") ?? "NVDA")
+  const symbols = (searchParams.get("symbols") ?? "")
     .split(",")
     .map((value) => value.trim().toUpperCase())
     .filter(Boolean)
@@ -28,4 +28,12 @@ export async function GET(request: Request) {
   );
 
   return NextResponse.json({ symbols, results });
+}
+
+export async function POST(request: Request) {
+  const body = (await request.json().catch(() => ({}))) as { symbols?: string[] | string };
+  const rawSymbols = Array.isArray(body.symbols) ? body.symbols.join(",") : body.symbols ?? "";
+  const requestUrl = new URL(request.url);
+  requestUrl.searchParams.set("symbols", rawSymbols);
+  return GET(new Request(requestUrl));
 }

@@ -132,6 +132,21 @@
   width: 130px;
 }
 
+.emptyState {
+  position: absolute;
+  left: 24px;
+  top: 112px;
+  width: 252px;
+  height: 118px;
+  border: 1px dashed var(--line);
+  border-radius: 14px;
+  background: var(--soft);
+  color: var(--muted);
+  padding: 28px 18px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
 .postsPanel {
   left: 364px;
   top: 324px;
@@ -199,6 +214,43 @@
   position: absolute;
   left: 478px;
   top: 66px;
+  width: 96px;
+  height: 38px;
+  border: 0;
+  border-radius: 11px;
+  background: var(--black);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.emptyPosts {
+  position: absolute;
+  left: 24px;
+  top: 108px;
+  width: 602px;
+  height: 220px;
+  border: 1px dashed var(--line);
+  border-radius: 16px;
+  background: var(--soft);
+  padding: 34px 28px;
+}
+
+.emptyPosts strong {
+  display: block;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.emptyPosts p {
+  width: 500px;
+  margin: 16px 0 24px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.emptyPosts button {
   width: 96px;
   height: 38px;
   border: 0;
