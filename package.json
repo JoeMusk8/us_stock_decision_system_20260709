@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "lightweight-charts": "4.2.3",
-    "next": "15.3.5",
+    "next": "16.2.10",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "zod": "3.25.67"
@@ -22,7 +22,7 @@
     "@types/react": "19.0.12",
     "@types/react-dom": "19.0.4",
     "eslint": "9.29.0",
-    "eslint-config-next": "15.3.5",
+    "eslint-config-next": "16.2.10",
     "typescript": "5.8.3"
   }
 }
